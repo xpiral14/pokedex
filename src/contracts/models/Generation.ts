@@ -1,10 +1,13 @@
+import GenericResult from "./GenericResult";
 import PokemonSpecie from "./PokemonSpecie";
 import Region from "./Region";
 
 export default interface Generation {
-  id :number;
-  name: string;
-  abilities: [];
+  id: number;
   main_region: Region;
-  pokemon_species: PokemonSpecie;
+  moves: [];
+  name: string;
+  pokemon_species: GenericResult[];
+  types: [];
+  version_groups: [];
 }
